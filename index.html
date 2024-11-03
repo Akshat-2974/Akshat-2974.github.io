@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akshat Mehta's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -38,27 +39,34 @@
     <section id="experience">
         <h2>Internship Experience</h2>
         <ul>
-            <li><strong>State Consumer Dispute Redressal Commission</strong> - Legal Intern, June-July 2024</li>
-            <li><strong>Chambers of Mr. Alok Mathur</strong> - Legal Intern, May-June 2024</li>
-            <li><strong>Kasliwal Chambers</strong> - Legal Intern, Dec-Jan 2024</li>
+            <li>
+                <button class="expand-button" onclick="toggleDetails('state-consumer')">
+                    <i class="fas fa-gavel"></i> State Consumer Dispute Redressal Commission - Legal Intern
+                </button>
+                <div class="details" id="state-consumer">
+                    <p>Worked under Hon’ble Justice Sangita Dhingra Sehgal, handling cases in banking, insurance, medical malpractice, and builder-buyer disputes. Drafted comprehensive judgments, improving my legal fluency and critical thinking.</p>
+                </div>
+            </li>
+            <li>
+                <button class="expand-button" onclick="toggleDetails('alok-mathur')">
+                    <i class="fas fa-balance-scale"></i> Chambers of Mr. Alok Mathur - Legal Intern
+                </button>
+                <div class="details" id="alok-mathur">
+                    <p>Worked on debt recovery cases under the RDBFI and SARFAESI Acts, drafting notices and appeals. Gained hands-on experience in debt recovery proceedings at the Debt Recovery Tribunal.</p>
+                </div>
+            </li>
+            <li>
+                <button class="expand-button" onclick="toggleDetails('kasliwal-chambers')">
+                    <i class="fas fa-scroll"></i> Kasliwal Chambers - Legal Intern
+                </button>
+                <div class="details" id="kasliwal-chambers">
+                    <p>Observed trial court proceedings, conducted research, interacted with clients, and drafted petitions on various legal matters, including restitution and desertion.</p>
+                </div>
+            </li>
         </ul>
     </section>
 
-    <section id="responsibilities">
-        <h2>Positions of Responsibility</h2>
-        <ul>
-            <li>Events Secretary of Girl Up JGU</li>
-            <li>Member of Drafting Committee, Trial Advocacy Society</li>
-            <li>Research Fellow, India Policy Forum</li>
-        </ul>
-    </section>
-
-    <section id="awards">
-        <h2>Awards & Scholarships</h2>
-        <ul>
-            <li>Merit-Based Scholarship, O.P. Jindal Global University</li>
-        </ul>
-    </section>
+    <!-- Add other sections similarly as above, with expandable details -->
 
     <section id="contact">
         <h2>Contact</h2>
