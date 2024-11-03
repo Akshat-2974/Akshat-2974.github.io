@@ -1,13 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
+    color: #333;
     padding: 20px;
 }
 
 header {
     text-align: center;
     padding: 20px;
+    color: #2c3e50;
+}
+
+header h1 {
+    font-size: 2.5em;
 }
 
 nav {
@@ -19,13 +30,13 @@ nav {
 }
 
 nav a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #f4f4f9;
+    color: #4d4dff;
 }
 
 section {
@@ -35,6 +46,10 @@ section {
 
 section h2 {
     color: #2c3e50;
+    font-size: 1.6em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .expand-button {
@@ -43,7 +58,9 @@ section h2 {
     color: #2c3e50;
     cursor: pointer;
     font-size: 1.1em;
-    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
     transition: color 0.3s;
 }
 
@@ -55,10 +72,13 @@ section h2 {
     display: none;
     padding: 10px 0;
     color: #555;
+    transition: all 0.3s ease;
 }
 
-.details p {
-    margin: 5px 0;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 #contact a {
